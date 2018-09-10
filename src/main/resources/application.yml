@@ -15,11 +15,13 @@ management:
 
 info:
  app:
-  name: spring-cloud-base
+  name: eureka
 
 spring:
   profiles:
-    active: single
+    active: cluster
+  application:
+    name: eureka
 
 
 

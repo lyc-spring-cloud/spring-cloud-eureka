@@ -4,12 +4,12 @@ server:
 # eureka 服务端配置
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: eureka1
   client:
-    register-with-eureka: false
+    register-with-eureka: true
     fetch-registry: false
     service-url:
-     defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+     defaultZone: http://127.0.0.1:9011/eureka/
   server:
     enable-self-preservation: false
     eviction-interval-timer-in-ms: 60000
